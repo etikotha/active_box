@@ -1,0 +1,528 @@
+/*Global css*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	margin-bottom: 0;
+	
+}
+/*header section css start*/
+header{
+	background: url(../img/background1.png);
+	height: 100%;
+
+    background-position: center;
+
+    background-size: cover;
+}
+.navbar{
+
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+.navbar .nav-item{
+	margin: 0 10px;
+}
+
+.navbar .nav-item.active .nav-link{
+
+	color: #e84545;
+}
+
+.navbar .nav-item.active .nav-link::after{
+	content: "";
+	background: #e84545;
+	position: absolute;
+	width: 48%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	/*opacity: 0;*/
+	transition: 0.4s linear;
+}
+
+.navbar .nav-item.active .nav-link::before{
+	content: "";
+	background: #e84545;
+	position: absolute;
+	width: 48%;
+	height: 2px;
+	right: 0;
+	bottom:0;
+	/*top: 0;*/
+	/*opacity: 0;*/
+	transition: 0.4s linear;
+}
+.navbar .nav-item .nav-link{
+
+	color: #fff;
+	padding: 8px 20px;
+	/*margin-left: 30px;*/
+	text-transform: uppercase;
+	position: relative;
+}
+
+.navbar .nav-item .nav-link::after{
+	content: "";
+	background: #e84545;
+	position: absolute;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	/*opacity: 0;*/
+	transition: 0.4s linear;
+}
+
+.navbar .nav-item .nav-link::before{
+	content: "";
+	background: #e84545;
+	position: absolute;
+	width: 0;
+	height: 2px;
+	right: 0;
+	bottom:0;
+	/*top: 0;*/
+	/*opacity: 0;*/
+	transition: 0.4s linear;
+}
+.navbar .nav-item .nav-link:hover::after{
+	/*opacity: 1;*/
+	/*width: 100%;*/
+	width: 48%;
+}
+
+.navbar .nav-item .nav-link:hover::before{
+	/*opacity: 1;*/
+	/*width: 100%;*/
+	width: 48%;
+}
+.navbar .nav-item .nav-link:hover {
+
+	color: #e84545;
+}
+.hero-area{
+
+	text-align: center;
+	color: #fff;
+	margin: 100px 0;
+}
+.hero-area h1{
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 65px;
+	font-weight: 700;
+	padding: 0 10%;
+	margin-bottom: 30px;
+}
+.hero-area p{
+
+	padding: 0 20%;
+	line-height: 1.7;
+	margin-bottom: 50px;
+}
+.hero-area .btn-cta{
+	color: #fff;
+	background-color: #e84545;
+	border: 1px solid #e84545;
+	padding: 7px 30px;
+	border-radius: 3px;
+}
+.hero-area .btn-cta:hover{
+	
+	background-color: #bd2525;
+	border: 1px solid #bd2525;
+}
+
+/*header section css end*/
+
+/*service section css start*/
+.service{
+
+	padding: 50px 0;
+}
+.service .box{
+
+	text-align: center;
+	margin: 30px 0;
+	
+}
+.service .box img{
+
+	margin-bottom: 25px;
+}
+.service .box h4{
+
+	margin-bottom: 20px;
+	font-weight: 700;
+}
+.service .box p{
+
+}
+
+/*service section css end*/
+
+/*gallery section css start*/
+.gallery{
+	padding: 80px 0;
+}
+.gallery-item{
+
+	position: relative;
+	overflow: hidden;
+}
+.gallery-item .hover-box{
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	width: 100%;
+
+	height: 100%;
+
+	background: rgba(232, 69, 69, 0.9);
+
+	text-align: center;
+
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.gallery-item .hover-box h5{
+    font-weight: 700;
+    margin-top: 75px;
+    transform: translateX(-150%);
+    transition: all 0.5s;
+}
+.gallery-item .hover-box p{
+	
+	transform: translateX(150%);
+	transition: all 0.5s;
+}
+.gallery-item:hover .hover-box{
+	opacity: 1;
+}
+
+.gallery-item img{
+	transition: all 0.4s;
+
+}
+.gallery-item:hover img {
+
+	transform: scale(1.2);
+}
+.gallery-item:hover .hover-box h5{
+	transform: translateY(0);
+}
+.gallery-item:hover .hover-box p{
+	transform: translateY(0);
+}
+/*gallery section css ens*/
+
+/*team section css start*/
+.team{
+
+	padding: 80px 0;
+}
+.team .team-box{
+
+}
+.team .team-box img{
+
+	margin-bottom: 20px;
+}
+.team .team-box  h3{
+
+	font-weight: 700;
+}
+.team .team-box  h5{
+
+	color: #e84545;
+	margin-bottom: 25px;
+	font-size: 18px;
+}
+.team .team-box  p{
+
+	margin-bottom: 20px;
+}
+.team .team-box .nav-item{
+
+	border: 1px solid #c6cacc;
+	margin-right: 5px;
+	border-radius: 3px;
+	transition:all 0.4s;
+}
+.team .team-box .nav-item .nav-link{
+
+	color: #c6cacc;
+}
+.team .team-box .nav-item:hover .nav-link{
+
+	color: #fff;
+}
+.team .team-box .nav-item:hover{
+	border:1px solid #e84545;
+	background: #e84545;
+
+}
+/*team section css end*/
+
+/*download section css start*/
+
+.download{
+
+}
+.download p{
+	font-size: 12px;
+}
+.download .btn-custom{
+
+	background: #e84545;
+	border-color: #e84545;
+	padding: 6px 50px;
+	border-radius: 3px;
+	transition:all 0.4s;
+}
+.download .btn-custom:hover{
+	background: #ff0000;
+	border-color: #ff0000;
+}
+/*download section css end*/
+
+/*footer section css start*/
+footer{
+	
+	background: #3a3e64;
+	padding: 50px 0;
+	color: #fff;
+}
+footer .box{
+
+	text-align: center;
+} 
+footer .box h5{
+
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+footer  .box p{
+
+	color: #999999;
+	padding: 0 35px;
+}
+footer  .box .nav-item{
+
+	border: 1px solid #fff;
+	margin: 0 5px;
+}
+footer .box .nav-item .nav-link{
+
+	color: #fff;
+}
+/*footer section css end*/
+
+/*footer-bottom section css start*/
+.footer-bottom{
+
+	text-align: center;
+	padding: 10px 0;
+	background: #313454;
+	color: #999;
+}
+.footer-bottom p{
+
+	font-size: 14px;
+}
+.footer-bottom p span{
+	color: #fff;
+    font-weight: 700;
+}
+
+/*footer-bottom section css end*/
+
+/*responsive css*/
+@media (min-width: 0px) and (max-width: 575px) {
+	
+	.navbar .nav-item .nav-link {
+    
+    padding: 8px 0;
+    
+    }
+
+    .navbar .nav-item.active .nav-link::after{
+	
+	content:"";
+	width: 25%;
+	
+    }
+
+    .navbar .nav-item.active .nav-link::before{
+	content: unset;
+	
+    }
+    .navbar .nav-item .nav-link:hover::after{
+	content:"";
+	width: 25%;
+	
+    }
+
+	.navbar .nav-item .nav-link::before{
+		content: unset;
+		
+	 }
+	 .hero-area {
+	    margin-top: 50px;
+	  }
+     .hero-area h1 {
+    
+        font-size: 36px;
+    
+      }
+
+    .gallery {
+    padding: 30px 0;
+    }
+    .gallery-item {
+    text-align: center;
+    }
+
+    .gallery-item .hover-box h5 {
+    
+    margin-top: 21%;
+    
+    }
+    .team .team-box {
+    text-align: center;
+    margin-bottom: 50px;
+    }
+    .team {
+    padding: 30px 0;
+    }
+    footer .box {
+  	margin-bottom: 40px;
+    }
+    footer {
+    padding-bottom: 10px;
+    }
+  }
+@media (min-width: 576px) and (max-width: 767px) {
+	.navbar .nav-item .nav-link {
+    padding: 8px 0;
+    }
+    .navbar .nav-item.active .nav-link::after{
+	width: 25%;
+	}
+
+    .navbar .nav-item.active .nav-link::before{
+	content: unset;
+	
+    }
+    .navbar .nav-item .nav-link:hover::after{
+     width: 25%;
+	}
+
+	.navbar .nav-item .nav-link::before{
+		content: unset;
+		
+	 }
+
+	  .hero-area {
+	   margin-top: 20px;
+	  }
+     .hero-area h1 {
+    
+      font-size: 36px;
+    
+      }
+      .hero-area p {
+       margin-bottom: 32px;
+      }
+
+      .team {
+      padding: 40px 0;
+      }
+     .team .team-box {
+      margin-bottom: 50px;
+    }
+     footer .box {
+  	margin-bottom: 40px;
+    }
+    footer {
+    padding-bottom: 10px;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.navbar .nav-item .nav-link {
+    padding: 8px 0;
+    }
+    .navbar .nav-item.active .nav-link::after{
+	width: 25%;
+	}
+
+    .navbar .nav-item.active .nav-link::before{
+	content: unset;
+	
+    }
+    .navbar .nav-item .nav-link:hover::after{
+	
+	width: 25%;
+	
+    }
+
+	.navbar .nav-item .nav-link::before{
+		content: unset;
+		
+	 }
+
+	  .hero-area {
+	   margin-top: 80px;
+	  }
+     .hero-area h1 {
+    
+      font-size: 55px;
+    
+      }
+      .hero-area p {
+       margin-bottom: 60px;
+      }
+
+      .team {
+      padding: 40px 0;
+      }
+     .team .team-box {
+      margin-bottom: 50px;
+    }
+     footer .box {
+  	margin-bottom: 40px;
+    }
+    footer {
+    padding-bottom: 10px;
+    }
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.hero-area {
+	margin-top: 100px;
+    }
+    .hero-area h1 {
+    font-size: 65px;
+    margin-bottom: 30px;
+   }
+
+   .hero-area p {
+    padding: 0 25%;
+    margin-bottom: 60px;
+   }
+   .navbar .nav-item .nav-link {
+    
+    padding: 8px 18px;
+    }
+}
+@media (min-width: 1200px)  {
+	
+}
